@@ -22,9 +22,15 @@
         <% Pokedex.forEach(Pokedex => { %>
         <img class="imager" src=<%= Pokedex.Imagem%> width="160" height="160">
         <p>
-        <h2 class="button button-pink send-bd">Nome:<%= Pokedex.Nome%></h2>
-        <h2 class="button button-pink send-bd">Tipo:<%= Pokedex.Tipo%></h2>
-        </p>
+        <h2 class="button button-pink send-bd">Número:<%= Pokedex.Número%>
+            <br>Descrição:<%= Pokedex.Descrição%>
+            <br> Altura:<%= Pokedex.Altura%>
+            <br> Peso:<%= Pokedex.Peso%>
+             <br>Categoria:<%= Pokedex.Categoria%>
+             <br>Habilidade:<%= Pokedex.Habilidade%>
+        </h2>
+        </h2>
+    </p>
      <% }) %>
     </ul>
 </body>
