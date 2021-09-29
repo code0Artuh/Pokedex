@@ -1,0 +1,102 @@
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar{
+    color: yellow;
+    padding-top:5px !important; 
+    padding-bottom:5px !important;
+    height: 60px !important;
+    margin-bottom: 25px;
+    text-align: center;
+    background: #0066ff;
+  }
+
+  .navbar h1{
+    margin-right: 150px;
+    font-family: Pokemon;  
+    font-size: 35px;
+    text-shadow: 
+        -1px -1px 0px rgb(0, 0, 0), 
+        -1px 1px 0px rgb(0, 0, 0),                    
+        1px -1px 0px rgb(0, 0, 0),                  
+        1px 0px 0px rgb(0, 0, 0);
+  }
+
+  .floatLeft{
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 0;
+    float: left;
+    vertical-align: middle;
+    background:#2D888F;
+    color:white; 
+    text-decoration:none;
+    text-align: center;
+    border-radius: 28px;
+    padding: 15px 15px 32px 15px;
+    border: 2px solid #000;
+    };
+
+.home{
+    display: flex;
+    justify-content: left;
+    width: 60px;
+    height: 20px;
+}
+
+body{
+    background: url(https://i.pinimg.com/originals/72/db/8e/72db8edbfb5618aae8ac74b8a0253f1c.jpg);
+    background-size: cover;
+}
+
+
+
+element.style {
+}
+
+.button-pink {
+    background: #bdb9b8;
+}
+.button {
+    font-size: 20px;
+    max-width: 240px;
+    border: 2px solid #000;
+    color: black;
+    text-shadow: -1px -1px white;
+    border-radius: 28px;
+    padding: 15px 15px 16px 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.imager {
+    margin-top: 8px;
+    margin-left: 40px;
+    font-size: 20px;
+    max-width: 240px;
+    border: 2px solid #000;
+    color: white;
+    border-radius: 28px;
+    padding: 15px 15px 16px 15px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+.send-bd{
+    margin-top: 10px;
+}
