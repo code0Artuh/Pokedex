@@ -7,15 +7,15 @@ let message = "";
 
 const Pokedex = [
     {
-        Número:"N°260",
-        Nome:"Swampert",
-        Tipo:"Aquatico, Terrestre",
-        Imagem:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/260.png",
-        Descrição:"This Pokémon also has powerful vision that lets it see even in murky water",
-        Altura:"1.5 M",
-        Peso:"81.9Kg",
-        Categoria:"Mud Fish",
-        Habilidade:"Torrent"},
+        Número:"N°802",
+        Nome:"Marshadow",
+        Tipo:"Lutador, Fantasma",
+        Imagem:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/802.png",
+        Descrição:"It slips into the shadows of others and mimics their powers and movements",
+        Altura:"107 M",
+        Peso:"22.2Kg",
+        Categoria:"Gloomweller",
+        Habilidade:"Technician"},
         {
             Número:"N°282",
             Nome:"Gardevoir",
