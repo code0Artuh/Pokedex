@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 3000; // Const para armanezar a porta do servidor
+app.listen(process.env.PORT || port,); // Const para armanezar a porta do servidor
 
 let message = "";
 
