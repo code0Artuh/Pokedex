@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/188/188918.png" type="image/x-icon"/>
     <title>Pokedex - BlueEdtech</title>
 </head>
 <body>
     <nav class="navbar navbar-center navbar">
+        <% if(message != "") {  %>
+            <section id="message">
+                <p><%= message %></p> <span id="close">&times;</span>
+            </section>
+        <% }  %>
         <div>
             <div>
                 <a class="floatLeft" href="/" >Home</a></div>
             <div>
                 <a class="floatLeft" href="/detalhes" >Detalhes</a></div>
+                <div>
+                    <a class="floatLeft" href="/cadastro" >Cadastro</a></div>
+            </div>
         </div>
         <h1>Bem-vindo a Pokedex!</h1>
     </nav>
@@ -28,4 +37,5 @@
      <% }) %>
     </ul>
 </body>
+<script type="text/javascript" src="/scripts/script.js"></script>
 </html>

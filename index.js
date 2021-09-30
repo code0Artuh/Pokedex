@@ -3,6 +3,8 @@ const path = require("path");
 const app = express();
 const port = 3000; // Const para armanezar a porta do servidor
 
+let message = "";
+
 const Pokedex = [
     {
         Número:"N°260",
@@ -38,9 +40,13 @@ const Pokedex = [
 
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.urlencoded());
 
   app.get("/", (req, res) => {
-    res.render("index", {Titulo: "poke", Pokedex : Pokedex}); // Nome do arquivo, o EJS já busca dentro da pasta views.
+    setTimeout(() => {
+      message = "";
+    }, 1000);
+    res.render("index", {Titulo: "poke", Pokedex : Pokedex, message}); // Nome do arquivo, o EJS já busca dentro da pasta views.
   });
 
   app.get("/detalhes", (req, res) => {
@@ -48,7 +54,30 @@ app.use(express.static(path.join(__dirname, "public")));
   });
 
   app.get("/cadastro", (req, res) => {
-    res.render("cadastro", {Titulo: "poke", Pokedex : Pokedex}); // Nome do arquivo, o EJS já busca dentro da pasta views.
+    res.render("cadastro"); // Nome do arquivo, o EJS já busca dentro da pasta views.
+  });
+
+  app.post("/new", (req, res) => {
+    const {number,
+      nome,
+      type,
+      img,
+      descrypt,
+      alt,
+      kg,
+      cat,
+      ability} = req.body;
+    Pokedex.push({Número: number,
+      Nome: nome,
+      Tipo: type,
+      Imagem: img,
+      Descrição: descrypt,
+      Altura: alt,
+      Peso: kg,
+      Categoria: cat,
+      Habilidade: ability}); // Nome do arquivo, o EJS já busca dentro da pasta views.
+      message = "Seu pokémon foi cadastrado com sucesso!!!"
+      res.redirect("/")
   });
 
 // Adicionando a const port e uma arow function de callback para mostrar no console que o servidor está rodando.
