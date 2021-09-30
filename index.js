@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-app.listen(process.env.PORT || port,); // Const para armanezar a porta do servidor
+app.set(process.env.PORT || 3000); // Const para armanezar a porta do servidor
 
 let message = "";
 
@@ -81,4 +81,4 @@ app.use(express.urlencoded());
   });
 
 // Adicionando a const port e uma arow function de callback para mostrar no console que o servidor está rodando.
-app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
+app.listen(3000, () => console.log(`Servidor rodando em http://localhost:${3000}`));
