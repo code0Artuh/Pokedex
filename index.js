@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-app.set(process.env.PORT || 8080); // Const para armanezar a porta do servidor
+const port = (process.env.PORT || 8000); // Const para armanezar a porta do servidor
 
 let message = "";
 
@@ -81,4 +81,4 @@ app.use(express.urlencoded());
   });
 
 // Adicionando a const port e uma arow function de callback para mostrar no console que o servidor está rodando.
-app.listen(8080);
+app.listen(port);
