@@ -62,9 +62,25 @@ app.use(express.urlencoded());
   });
 
   app.post("/new", (req, res) => {
-    const pokemon = req.body;
-    Pokedex.push(pokemon);
-    message = "Seu pokemon foi registrado!!!";
+    const {number,
+      nome,
+      type,
+      img,
+      descrypt,
+      alt,
+      kg,
+      cat,
+      ability} = req.body;
+    Pokedex.push({Número: number,
+      Nome: nome,
+      Tipo: type,
+      Imagem: img,
+      Descrição: descrypt,
+      Altura: alt,
+      Peso: kg,
+      Categoria: cat,
+      Habilidade: ability}); // Nome do arquivo, o EJS já busca dentro da pasta views.
+      message = "Seu pokémon foi cadastrado com sucesso!!!"
     res.redirect("/");
   });
 
