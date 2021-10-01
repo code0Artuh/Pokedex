@@ -23,7 +23,6 @@ html {
   }
 
   .navbar h1{
-    margin-right: 150px;
     font-family: Pokemon;  
     font-size: 35px;
     text-shadow: 
@@ -80,6 +79,7 @@ element.style {
     text-align: center;
     display: block;
 }
+
 
 .imager {
     margin-top: 8px;

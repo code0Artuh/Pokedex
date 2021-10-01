@@ -14,8 +14,6 @@
             <div>
                 <a class="floatLeft" href="/" >Home</a></div>
             <div>
-                <a class="floatLeft" href="/detalhes" >Detalhes</a></div>
-                <div>
                     <a class="floatLeft" href="/cadastro" >Cadastro</a></div>
             </div>
         </div>
@@ -23,20 +21,18 @@
         <h1>Bem-vindo a Pokedex!</h1>
     </nav>
     
-    <ul>
-        <% Pokedex.forEach(Pokedex => { %>
-        <img class="imager" src=<%= Pokedex.Imagem%> width="160" height="160">
+    <ul></ul>
+        <img class="imager" src=<%= pokemon.Imagem%> width="160" height="160">
         <p>
-        <h2 class="button button-pink send-bd">Número:<%= Pokedex.Número%>
-            <br>Descrição:<%= Pokedex.Descrição%>
-            <br> Altura:<%= Pokedex.Altura%>
-            <br> Peso:<%= Pokedex.Peso%>
-             <br>Categoria:<%= Pokedex.Categoria%>
-             <br>Habilidade:<%= Pokedex.Habilidade%>
+        <h2 class="button button-pink send-bd send2">Número:<%= pokemon.Número%>
+            <br>Descrição:<%= pokemon.Descrição%>
+            <br> Altura:<%= pokemon.Altura%>
+            <br> Peso:<%= pokemon.Peso%>
+             <br>Categoria:<%= pokemon.Categoria%>
+             <br>Habilidade:<%= pokemon.Habilidade%>
         </h2>
         </h2>
     </p>
-     <% }) %>
     </ul>
 </body>
 </html>

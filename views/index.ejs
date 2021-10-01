@@ -9,7 +9,7 @@
     <title>Pokedex - BlueEdtech</title>
 </head>
 <body>
-    <audio autoplay="autoplay">
+    <audio autoplay="autoplay" loop>
         <source src="/audio/music.mp3" type="audio/mp3">
       </audio>
     <nav class="navbar navbar-center navbar">
@@ -21,8 +21,6 @@
         <div>
             <div>
                 <a class="floatLeft" href="/" >Home</a></div>
-            <div>
-                <a class="floatLeft" href="/detalhes" >Detalhes</a></div>
                 <div>
                     <a class="floatLeft" href="/cadastro" >Cadastro</a></div>
             </div>
@@ -31,12 +29,15 @@
     </nav>
     
     <ul>
-        <% Pokedex.forEach(Pokedex => { %>
-        <img class="imager" src=<%= Pokedex.Imagem%> width="160" height="160">
+        <% Pokedex.forEach((item, find) => { %>
+        <a href="/detalhes/<%= find %>">
+        <img class="imager" src=<%= item.Imagem%> width="160" height="160">
+        </a>
         <p>
-        <h2 class="button button-pink send-bd">Nome:<%= Pokedex.Nome%></h2>
-        <h2 class="button button-pink send-bd">Tipo:<%= Pokedex.Tipo%></h2>
+        <h2 class="button button-pink send-bd">Nome:<%= item.Nome%></h2>
+        <h2 class="button button-pink send-bd">Tipo:<%= item.Tipo%></h2>
         </p>
+       
      <% }) %>
     </ul>
 </body>
