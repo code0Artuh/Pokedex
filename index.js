@@ -4,16 +4,16 @@ const app = express();
 const port = (process.env.PORT || 8000); // Const para armanezar a porta do servidor
 
 const Pokedex = [{
-  Número:"N°802",
-  Nome:"Marshadow",
-  Tipo:"Lutador, Fantasma",
-  Imagem:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/802.png",
-  Imagem2:"https://i.pinimg.com/originals/5d/85/01/5d85014538f34de1c9fbe42f9648da7c.gif",
-  Descrição:"It slips into the shadows of others and mimics their powers and movements",
-  Altura:"107 M",
-  Peso:"22.2Kg",
-  Categoria:"Gloomweller",
-  Habilidade:"Technician"},
+  Número:"N°006",
+  Nome:"Charizard",
+  Tipo:"Fogo, Voador",
+  Imagem:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+  Imagem2:"https://i.pinimg.com/originals/a8/a4/56/a8a4561433ee9fd5e4aef69e930bff79.gif",
+  Descrição:"It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
+  Altura:"1.7 M",
+  Peso:"90.5Kg",
+  Categoria:"Flame",
+  Habilidade:"Blaze"},
   {
 
       Número:"N°282",
