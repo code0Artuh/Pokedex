@@ -19,8 +19,8 @@ html {
     height: 60px !important;
     margin-bottom: 25px;
     text-align: center;
-    background: url(https://thumbs.dreamstime.com/z/illustration-redraw-redesign-pokemon-pikachu-ball-rotate-seamless-pattern-redraw-redesign-pokemon-pikachu-ball-163875816.jpg);
-    background-size: cover;
+    background: url(https://data.whicdn.com/images/250452560/original.jpg);
+    background-repeat: repeat;
   }
   .navbar h1{
     font-family: Pokemon;  
@@ -55,13 +55,23 @@ html {
 }
 
 body{
-    background: url(https://cutewallpaper.org/21/pokemon-gif-wallpaper/Purple-Eared-Pikachu-Animation-by-moxie2D-Pikachu-art-.gif);
+    background: url(https://ml1mpivwayoo.i.optimole.com/Nz0zgus.ETDY~34161/w:auto/h:auto/q:auto/https://mearasescoladexadrez.com/wp-content/uploads/2016/03/Background-Pokemon-FIX-2-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: black;
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 element.style {
 }

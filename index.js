@@ -52,6 +52,18 @@ app.use(express.urlencoded());
     res.render("index", {Pokedex, message}); // Nome do arquivo, o EJS já busca dentro da pasta views.
   });
 
+  app.get("/violent", (req, res) => {
+    res.render("violent")
+  });
+
+  app.get("/jogar", (req, res) => {
+    res.render("jogar")
+  });
+
+  app.get("/batalhar", (req, res) => {
+    res.render("batalhar")
+  });
+
   app.get("/detalhes/:id", (req, res) => {
     const id = req.params.id;
     const pokemon = Pokedex[id];

@@ -20,16 +20,17 @@
         <% }  %>
         <div>
             <div>
-                <a class="floatLeft" href="/" >Home</a></div>
-                <div>
-                    <a class="floatLeft" href="/cadastro" >Cadastro</a></div>
-                    <div>
-                        <a class="floatLeft" href="https://code0artuh.github.io/pokegame/" target="_blank" >Jogar!</a></div>
-                        <div>
-                            <a class="floatLeft" href="https://code0artuh.github.io/poke-battle/" target="_blank" >Batalhar!</a></div>
-            </div>
+            <a class="floatLeft" href="/" >Home</a></div>
+            <div>
+            <a class="floatLeft" href="/cadastro" >Cadastro</a></div>
+            <div>
+            <a class="floatLeft" href="/jogar">Jogar!</a></div>
+            <div>
+            <a class="floatLeft" href="/batalhar">Batalhar!</a></div>
+            <div>
+            <a class="floatLeft" href="/violent" >Violent!!</a></div>
+        </div>
     </nav>
-
     <ul>
         <% Pokedex.forEach((item, find) => { %>
         <a href="/detalhes/<%= find %>">
@@ -39,7 +40,6 @@
         <h2 class="button button-pink send-bd">Nome: <%= item.Nome%></h2>
         <h2 class="button button-pink send-bd">Tipo: <%= item.Tipo%></h2>
         </p>
-       
      <% }) %>
     </ul>
 </body>
