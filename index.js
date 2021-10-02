@@ -56,6 +56,10 @@ app.use(express.urlencoded());
     res.render("violent")
   });
 
+  app.get("/nes", (req, res) => {
+    res.render("nes")
+  });
+
   app.get("/jogar", (req, res) => {
     res.render("jogar")
   });
