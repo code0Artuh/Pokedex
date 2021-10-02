@@ -90,6 +90,7 @@ app.use(express.urlencoded());
       Nome: nome,
       Tipo: type,
       Imagem: img,
+      Imagem2: img,
       Descrição: descrypt,
       Altura: alt,
       Peso: kg,
