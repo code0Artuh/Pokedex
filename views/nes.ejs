@@ -8,7 +8,16 @@
     <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/gamepads-1/512/Nes-512.png" type="image/x-icon"/>
     <title>Emulador</title>
 </head>
-<body>
+<body oncontextmenu="return false" onkeydown="return false" ondragstart="return false" onselectstart="return false" onload="zzcatfishclose();">
+    <script language=JavaScript> var message="";
+     function clickIE4(){ if (event.button==2){ alert(message);
+      return false; } } 
+      function clickNS4(e){ if (document.layers||document.getElementById&&!document.all)
+      { if (e.which==2||e.which==3){ alert(message); return false; } } } 
+      if (document.layers){ document.captureEvents(Event.MOUSEDOWN); 
+      document.onmousedown=clickNS4; } else
+       if (document.all&&!document.getElementById){ document.onmousedown=clickIE4; }
+        document.oncontextmenu=new Function("alert(message);return false") </script>
     <nav class="navbar navbar-center navbar">
         <div>
             <div>
