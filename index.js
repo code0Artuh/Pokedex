@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = (process.env.PORT || 8000); // Const para armanezar a porta do servidor
+const port = (process.env.PORT || 8000);
 
 const Pokedex = [{
   Número:"N°006",
@@ -49,7 +49,7 @@ app.use(express.urlencoded());
     setTimeout(() => {
       message = "";
     }, 1000);
-    res.render("index", {Pokedex, message}); // Nome do arquivo, o EJS já busca dentro da pasta views.
+    res.render("index", {Pokedex, message}); 
   });
 
   app.get("/violent", (req, res) => {
@@ -77,7 +77,7 @@ app.use(express.urlencoded());
   });
 
   app.get("/cadastro", (req, res) => {
-    res.render("cadastro"); // Nome do arquivo, o EJS já busca dentro da pasta views.
+    res.render("cadastro");
   });
 
   app.post("/new", (req, res) => {
@@ -99,10 +99,11 @@ app.use(express.urlencoded());
       Altura: alt,
       Peso: kg,
       Categoria: cat,
-      Habilidade: ability}); // Nome do arquivo, o EJS já busca dentro da pasta views.
+      Habilidade: ability});
       message = "Seu pokémon foi cadastrado com sucesso!!!"
     res.redirect("/");
   });
 
-// Adicionando a const port e uma arow function de callback para mostrar no console que o servidor está rodando.
+
 app.listen(port);
+console.log( `Seu app esta rodando no http://localhost:${port}`)
